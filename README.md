@@ -2,7 +2,7 @@
 
 [![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
 [![Python 3.14](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](./pyproject.toml)
-[![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
+[![MIT](<https://img.shields.io/badge/license-see%20LICENSE-yellow.svg>)](./LICENSE)
 
 > Professional Python project: investigating a deployed machine learning model.
 
@@ -44,39 +44,6 @@ You'll work with these areas:
 This project uses `requests` to make the calls.
 Be sure the requests package is listed in `pyproject.toml`.
 
-## Instructions (pro-analytics-02)
-
-Follow the
-[step-by-step workflow guide](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
-to complete:
-
-1. Phase 1. **Start & Run**
-2. Phase 2. **Change Authorship**
-3. Phase 3. **Read & Understand**
-4. Phase 4. **Modify**
-5. Phase 5. **Apply**
-
-## Challenges
-
-Challenges are expected.
-Sometimes instructions may not quite match your operating system.
-When issues occur, share screenshots, error messages, and details about what you tried.
-Working through issues is part of implementing professional projects.
-
-## Success
-
-After completing Phase 1. **Start & Run**, you'll have your own GitHub project,
-with the example notebook executed and committed,
-and running the example module will print out:
-
-```shell
-========================
-Executed successfully!
-========================
-```
-
-A new file `project.log` will appear in the root project folder.
-
 ## Command Reference
 
 <details>
@@ -88,8 +55,8 @@ After you get a copy of this repo in your own GitHub account,
 open a machine terminal in your `Repos` folder:
 
 ```shell
-# Replace username with YOUR GitHub username.
-git clone https://github.com/username/ml-07-applied
+
+git clone https://github.com/ajaneh/ml-07-applied
 
 cd ml-07-applied
 code .
@@ -132,43 +99,6 @@ git push -u origin main
 ```
 
 </details>
-
-## Notes
-
-- Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
-- Use `CTRL+f` to find (and replace) text within a file.
-- You do not need to add to or modify `tests/`. They are provided for example only.
-- Many files are silent helpers. Explore as you like, but nothing is required.
-- You do NOT need to understand everything; understanding builds naturally over time.
-
-## Troubleshooting >>>
-
-If you see something like this in your terminal: `>>>` or `...`
-You accidentally started Python interactive mode.
-It happens.
-Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
-
-## Example Output (Can Remove this Section after You Verify)
-
-```shell
-| INFO | ML | Summarize workflow........
-| INFO | ML | ========================
-| INFO | ML | SUMMARY
-| INFO | ML | ========================
-| INFO | ML | Dataset: hours_scores_case
-| INFO | ML | Original rows: 10
-| INFO | ML | Clean rows: 10
-| INFO | ML | Features: ['hours_studied', 'practice_quizzes', 'attendance_pct', 'sleep_hours', 'prior_score']
-| INFO | ML | Target: score
-| INFO | ML | ----- in a script, call plt.show() once at the end to display all charts -----
-| INFO | ML | ----- in a script, CLOSE the chart windows with the close button to CONTINUE -----
-| INFO | ML | Workflow complete
-| INFO | ML | IMPORTANT: This script creates chart windows.
-| INFO | ML | Close chart windows and terminate this process with CTRL+c as needed.
-| INFO | ML | ========================
-| INFO | ML | Executed successfully!
-| INFO | ML | ========================
-```
 
 ## Findings and Visuals
 
