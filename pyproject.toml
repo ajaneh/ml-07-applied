@@ -27,6 +27,7 @@ dependencies = [
     "scikit-learn", # machine learning library
     "seaborn",      # statistical data visualization built on matplotlib
     "matplotlib",   # plotting library for static, animated, and interactive visualizations in Python
+    "plotly>=6.9.0",
 ]
 
 
