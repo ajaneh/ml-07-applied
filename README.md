@@ -27,22 +27,9 @@ See [docs/your-files.md] for more.
 Links:
 
 - [ml_07_case.ipynb](notebooks/ml_07_case.ipynb)
+- [Custom Project](notebooks/ml_07_alex.ipynb)
 
-## Working Files
 
-You'll work with these areas:
-
-- **data/raw** - raw data for exploration (only if you add a dataset)
-- **docs/** - project narrative and documentation
-- **src/mlstudio/** - the app is an example; run only (no need to modify)
-- **notebooks/** - interactive analysis
-- **pyproject.toml** - update authorship & links
-- **zensical.toml** - update authorship & links
-
-## Additional Packages
-
-This project uses `requests` to make the calls.
-Be sure the requests package is listed in `pyproject.toml`.
 
 ## Command Reference
 
@@ -84,6 +71,10 @@ uvx pre-commit run --all-files
 
 # run the example module to verify the environment (.venv/)
 uv run python -m mlstudio.app_case
+cd notebooks
+open ml_07_alex
+select kernal
+run all
 
 # run common chores
 uv run ruff format .
@@ -102,26 +93,22 @@ git push -u origin main
 
 ## Findings and Visuals
 
-Take screenshots of your charts and provide them here with a discussion.
-In Markdown, display a figure by using:
-an exclamation mark immediately followed by square brackets containing a useful caption
-immediately followed by parentheses containing the relative path to your figure.
-Note: When you start typing the path with a dot (.) for "here, in this directory",
-the IDE may help complete the path.
+This investigation probed the ML Penguin Predictor to understand how it classifies penguin species from biometric measurements. By systematically varying features and visualizing decision boundaries, I identified that **bill_length is the dominant predictor**, with a clear transition zone around 45mm separating Adelie from Chinstrap/Gentoo species. Other features contribute less in isolation, but combining bill_length, flipper_length, and bill_depth in 3D space reveals the full decision surface.
 
-In your custom project, follow this example, but
+**Key finding**: The model reliably predicts species based on bill geometry, but lacks input validation—accepting physically impossible measurements without warning.
 
-- your figures and narrative should reflect your work,
-- this `README.md` should include your commands, process, and visuals, and
-- `docs/index.md` should include your narrative.
+### Charts
 
-Remove unnecessary instructional comments in your custom files.
+![flipper_length_mm sensitivity sweep](./docs/images/Screenshot%202026-08-13%2016.03.53.png)
 
-Update figures to present interesting results from your custom project:
+![bill_length_mm sensitivity sweepf](./docs/images/Screenshot%202026-08-13%2016.04.06.png)
 
-![Provide a Useful Caption](./docs/images/Figure_1.png)
+![2D prediction grid: bill_length vs body_mass](./docs/images/Screenshot%202026-08-13%2016.04.36.png)
 
-![Provide a Useful Caption](./docs/images/Figure_2.png)
+**Interactive 3D Plot** (click to explore in full interactivity):
+[View 3D Decision Surface (fixed body_mass)](./docs/images/fixed_body_mass_3d_graph.html)
+
+
 
 ## Project Documentation
 

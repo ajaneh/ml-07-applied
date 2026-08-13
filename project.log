@@ -1339,3 +1339,151 @@ dtype: int64
 2026-08-13 16:18:59 | INFO | M07 | ========================
 2026-08-13 16:18:59 | INFO | M07 | API endpoint: https://ml-06-serving.onrender.com/predict
 2026-08-13 16:18:59 | INFO | M07 | ========================
+2026-08-13 21:13:31 | INFO | M07 | === RUN START ===
+2026-08-13 21:13:31 | INFO | M07 | project=M07
+2026-08-13 21:13:31 | INFO | M07 | repo_dir=ml-07-applied
+2026-08-13 21:13:31 | INFO | M07 | python=3.14.7
+2026-08-13 21:13:31 | INFO | M07 | os=Linux 6.8.0-1052-azure
+2026-08-13 21:13:31 | INFO | M07 | shell=bash
+2026-08-13 21:13:31 | INFO | M07 | cwd=notebooks
+2026-08-13 21:13:31 | INFO | M07 | github_actions=False
+2026-08-13 21:13:31 | INFO | M07 | Confirming installation:
+2026-08-13 21:13:31 | INFO | M07 |   python:       3.14.7
+2026-08-13 21:13:31 | INFO | M07 |   pandas:       3.0.5
+2026-08-13 21:13:31 | INFO | M07 |   numpy:        2.5.2
+2026-08-13 21:13:31 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-13 21:13:31 | INFO | M07 |   seaborn:      0.13.2
+2026-08-13 21:13:31 | INFO | M07 |   requests:     2.34.2
+2026-08-13 21:13:31 | INFO | M07 |   plotly 6.9.0
+2026-08-13 21:13:31 | INFO | M07 | API endpoint: https://ml-06-serving.onrender.com/predict
+2026-08-13 21:13:31 | INFO | M07 | Baseline predictions:
+2026-08-13 21:14:01 | INFO | M07 | TIMEOUT (server may be sleeping - try again)
+2026-08-13 21:14:01 | INFO | M07 |   expected=Adelie     got=TIMEOUT (server may be sleeping - try again) [MISMATCH]
+2026-08-13 21:14:24 | INFO | M07 | Chinstrap
+2026-08-13 21:14:24 | INFO | M07 |   expected=Chinstrap  got=Chinstrap  [OK]
+2026-08-13 21:14:24 | INFO | M07 | Gentoo
+2026-08-13 21:14:24 | INFO | M07 |   expected=Gentoo     got=Gentoo     [OK]
+2026-08-13 21:14:24 | INFO | M07 | Chinstrap
+2026-08-13 21:14:24 | INFO | M07 |   expected=MedianSurprise got=Chinstrap  [MISMATCH]
+2026-08-13 21:14:27 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 21:14:27 | INFO | M07 |  bill_length_mm prediction
+      30.000000     Adelie
+      33.333333     Adelie
+      36.666667     Adelie
+      40.000000     Adelie
+      43.333333     Gentoo
+      46.666667  Chinstrap
+      50.000000  Chinstrap
+      53.333333  Chinstrap
+      56.666667  Chinstrap
+      60.000000  Chinstrap
+2026-08-13 21:14:27 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 21:14:33 | INFO | M07 | flipper_length_mm sweep:
+2026-08-13 21:14:33 | INFO | M07 |  flipper_length_mm prediction
+        160.000000     Adelie
+        166.315789     Adelie
+        172.631579     Adelie
+        178.947368     Adelie
+        185.263158     Adelie
+        191.578947     Adelie
+        197.894737     Adelie
+        204.210526     Adelie
+        210.526316     Adelie
+        216.842105     Adelie
+        223.157895     Adelie
+        229.473684     Adelie
+        235.789474     Adelie
+        242.105263     Adelie
+        248.421053     Adelie
+        254.736842     Adelie
+        261.052632     Adelie
+        267.368421     Adelie
+        273.684211     Adelie
+        280.000000     Adelie
+2026-08-13 21:14:59 | INFO | M07 | ANALYST CHOICE: What does the boundary shape tell you about the model?
+2026-08-13 21:15:53 | INFO | M07 | Edge case results:
+2026-08-13 21:15:53 | INFO | M07 |   missing feature        -> ERROR: 422 Client Error: Unprocessable Entity for url: https://ml-06-serving.onrender.com/predict
+2026-08-13 21:15:53 | INFO | M07 |   extreme bill length    -> Adelie
+2026-08-13 21:15:53 | INFO | M07 |   very large bill        -> Chinstrap
+2026-08-13 21:15:54 | INFO | M07 |   negative value         -> Adelie
+2026-08-13 21:15:54 | INFO | M07 |   zero body mass         -> Adelie
+2026-08-13 21:15:54 | INFO | M07 | ANALYST CHOICE: Which edge cases were handled cleanly and which were not?
+2026-08-13 21:15:54 | INFO | M07 | ========================
+2026-08-13 21:15:54 | INFO | M07 | SUMMARY
+2026-08-13 21:15:54 | INFO | M07 | ========================
+2026-08-13 21:15:54 | INFO | M07 | API endpoint: https://ml-06-serving.onrender.com/predict
+2026-08-13 21:15:54 | INFO | M07 | ========================
+2026-08-13 21:16:34 | INFO | M07 | === RUN START ===
+2026-08-13 21:16:34 | INFO | M07 | project=M07
+2026-08-13 21:16:34 | INFO | M07 | repo_dir=ml-07-applied
+2026-08-13 21:16:34 | INFO | M07 | python=3.14.7
+2026-08-13 21:16:34 | INFO | M07 | os=Linux 6.8.0-1052-azure
+2026-08-13 21:16:34 | INFO | M07 | shell=bash
+2026-08-13 21:16:34 | INFO | M07 | cwd=notebooks
+2026-08-13 21:16:34 | INFO | M07 | github_actions=False
+2026-08-13 21:16:34 | INFO | M07 | Confirming installation:
+2026-08-13 21:16:34 | INFO | M07 |   python:       3.14.7
+2026-08-13 21:16:34 | INFO | M07 |   pandas:       3.0.5
+2026-08-13 21:16:34 | INFO | M07 |   numpy:        2.5.2
+2026-08-13 21:16:34 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-13 21:16:34 | INFO | M07 |   seaborn:      0.13.2
+2026-08-13 21:16:34 | INFO | M07 |   requests:     2.34.2
+2026-08-13 21:16:34 | INFO | M07 |   plotly 6.9.0
+2026-08-13 21:16:34 | INFO | M07 | API endpoint: https://ml-06-serving.onrender.com/predict
+2026-08-13 21:16:34 | INFO | M07 | Baseline predictions:
+2026-08-13 21:16:34 | INFO | M07 | Adelie
+2026-08-13 21:16:34 | INFO | M07 |   expected=Adelie     got=Adelie     [OK]
+2026-08-13 21:16:35 | INFO | M07 | Chinstrap
+2026-08-13 21:16:35 | INFO | M07 |   expected=Chinstrap  got=Chinstrap  [OK]
+2026-08-13 21:16:35 | INFO | M07 | Gentoo
+2026-08-13 21:16:35 | INFO | M07 |   expected=Gentoo     got=Gentoo     [OK]
+2026-08-13 21:16:35 | INFO | M07 | Chinstrap
+2026-08-13 21:16:35 | INFO | M07 |   expected=MedianSurprise got=Chinstrap  [MISMATCH]
+2026-08-13 21:16:38 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 21:16:38 | INFO | M07 |  bill_length_mm prediction
+      30.000000     Adelie
+      33.333333     Adelie
+      36.666667     Adelie
+      40.000000     Adelie
+      43.333333     Gentoo
+      46.666667  Chinstrap
+      50.000000  Chinstrap
+      53.333333  Chinstrap
+      56.666667  Chinstrap
+      60.000000  Chinstrap
+2026-08-13 21:16:38 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 21:16:42 | INFO | M07 | flipper_length_mm sweep:
+2026-08-13 21:16:42 | INFO | M07 |  flipper_length_mm prediction
+        160.000000     Adelie
+        166.315789     Adelie
+        172.631579     Adelie
+        178.947368     Adelie
+        185.263158     Adelie
+        191.578947     Adelie
+        197.894737     Adelie
+        204.210526     Adelie
+        210.526316     Adelie
+        216.842105     Adelie
+        223.157895     Adelie
+        229.473684     Adelie
+        235.789474     Adelie
+        242.105263     Adelie
+        248.421053     Adelie
+        254.736842     Adelie
+        261.052632     Adelie
+        267.368421     Adelie
+        273.684211     Adelie
+        280.000000     Adelie
+2026-08-13 21:17:09 | INFO | M07 | ANALYST CHOICE: What does the boundary shape tell you about the model?
+2026-08-13 21:18:03 | INFO | M07 | Edge case results:
+2026-08-13 21:18:03 | INFO | M07 |   missing feature        -> ERROR: 422 Client Error: Unprocessable Entity for url: https://ml-06-serving.onrender.com/predict
+2026-08-13 21:18:03 | INFO | M07 |   extreme bill length    -> Adelie
+2026-08-13 21:18:03 | INFO | M07 |   very large bill        -> Chinstrap
+2026-08-13 21:18:03 | INFO | M07 |   negative value         -> Adelie
+2026-08-13 21:18:04 | INFO | M07 |   zero body mass         -> Adelie
+2026-08-13 21:18:04 | INFO | M07 | ANALYST CHOICE: Which edge cases were handled cleanly and which were not?
+2026-08-13 21:18:04 | INFO | M07 | ========================
+2026-08-13 21:18:04 | INFO | M07 | SUMMARY
+2026-08-13 21:18:04 | INFO | M07 | ========================
+2026-08-13 21:18:04 | INFO | M07 | API endpoint: https://ml-06-serving.onrender.com/predict
+2026-08-13 21:18:04 | INFO | M07 | ========================
